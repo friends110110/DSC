@@ -1,0 +1,876 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DSC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\app.ico"
+IDR_VC_DEMTYPE          ICON    DISCARDABLE     "res\\DSCDoc.ico"
+IDI_Adduser             ICON    DISCARDABLE     "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_TREE                BITMAP  DISCARDABLE     "res\\treebmp.bmp"
+IDB_HOTTOOLBAR          BITMAP  DISCARDABLE     "res\\hotbar.bmp"
+IDB_COLDTOOLBAR         BITMAP  DISCARDABLE     "res\\coldbar.BMP"
+IDB_SETTING             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_MISTARTSERVICE
+    BUTTON      ID_MISTOPSERVICE
+    SEPARATOR
+    BUTTON      ID_MIREFRESHTABLE
+    BUTTON      ID_MIOFFLINE
+    SEPARATOR
+    BUTTON      ID_MISENDDATA
+    SEPARATOR
+    BUTTON      ID_SHOWMENU
+    SEPARATOR
+    BUTTON      ID_HELPCONTENT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_QUIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&Q)",                    ID_QUIT
+    END
+    POPUP "控制(&C)"
+    BEGIN
+        MENUITEM "启动服务(&S)",                ID_MISTARTSERVICE
+        MENUITEM "停止服务(&P)",                ID_MISTOPSERVICE
+        MENUITEM "刷新列表(&R)",                ID_MIREFRESHTABLE
+        MENUITEM "分离终端(&O)",                ID_MIOFFLINE
+        MENUITEM "分离全部(&A)",                ID_MIOFFLINEALL
+        MENUITEM "清除(&C)",                    ID_MICLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "发送数据(&D)",                ID_MISENDDATA
+        MENUITEM SEPARATOR
+        MENUITEM "断开PPP",                     ID_DISCONNECT_PPP
+        MENUITEM "停止向DSC发送数据",           ID_STOP_TO_SEND
+        MENUITEM "允许向DSC发送数据",           ID_START_TO_SEND
+        MENUITEM "丢弃用户数据",                ID_DISCARD_DATA
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        MENUITEM "应答(&A)",                    ID_MIANSWER
+        MENUITEM SEPARATOR
+        MENUITEM "服务设置(&S)",                ID_MISERVERSETTING
+        MENUITEM "数据显示(&D)",                ID_MISHOWDATA
+        MENUITEM "DTU远程参数设置",             IDM_DTUREMOTESETTING
+        MENUITEM "数据库配置",                  IDM_SQLSETTING
+    END
+    POPUP "用户数据(&D)"
+    BEGIN
+        MENUITEM "导入(&I)",                    ID_USERINFOIN
+        MENUITEM "导出(&O)",                    ID_USERINFOOUT
+        MENUITEM SEPARATOR
+        MENUITEM "添加用户(&A)",                ID_Adduser
+        MENUITEM "删除用户(&D)",                ID_DELETE_USER
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "显示文字(&W)",                ID_MIVIEWWORD
+    END
+    POPUP "呼叫控制(&M)"
+    BEGIN
+        MENUITEM "启动(&T)",                    ID_MENUSMSSTART
+        MENUITEM "停止(&E)",                    ID_MENUSMSEXIT
+        MENUITEM "配置(&C)",                    ID_MENUITEM32804
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "帮助内容(&H)",                ID_HELPCONTENT
+        MENUITEM "关于DSC 中心程序1.0 版(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_DROPDOWNMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "DropDown"
+    BEGIN
+        MENUITEM "分离全部(&A)",                ID_MIOFFLINEALL
+    END
+END
+
+IDR_SPEEDMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "快捷菜单"
+    BEGIN
+        MENUITEM "发送数据(&S)",                ID_MISENDDATA
+        MENUITEM "分离终端(&O)",                ID_MIOFFLINE
+        MENUITEM "分离全部(&A)",                ID_MIOFFLINEALL
+        MENUITEM "刷新列表(&R)",                ID_MIREFRESHTABLE
+        MENUITEM "添加用户(&A)",                ID_Adduser
+        MENUITEM "删除用户(&D)",                ID_DELETE_USER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 225, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DSC 中心程序1.0 版"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DSC 中心程序1.0 版",IDC_STATIC,43,13,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 杭州诺朗科技有限公司",IDC_STATIC,43,28,135,
+                    8
+    CONTROL         178,IDC_STATIC,"Static",SS_BITMAP,30,50,173,23
+END
+
+IDD_SETTINGDLG DIALOG DISCARDABLE  0, 0, 275, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "参数设置"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "确定(&R)",IDOK,178,146,42,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,226,146,42,14
+    COMBOBOX        IDC_CMSERVERPORT,70,37,63,77,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMPOLLTIME,70,57,63,58,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMOFFLINETIME,70,75,63,58,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Static",IDC_STATIC1,25,40,43,8
+    COMBOBOX        IDC_CMLOGITEMCOUNT,70,37,63,57,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Static",IDC_STATIC2,25,59,44,8
+    CONTROL         "Static",IDC_STATIC3,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,25,78,43,8
+    CONTROL         "系统自动维护用户列表",IDC_CKSYSAUTOPOLL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,159,38,96,10
+    CONTROL         "保存数据到文件",IDC_CKSAVETOLOG,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,159,38,72,10
+    CONTROL         "显示信息头部",IDC_CKSHOWHEAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,159,59,64,10
+    CONTROL         "HEX显示数据",IDC_CKHEXSHOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,159,79,60,10
+    LISTBOX         IDC_LIST1,70,95,76,32,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,159,96,70,64,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "删除",IDC_DELETEIP,159,113,50,14
+    LTEXT           "选中IP",IDC_STATIC4,25,95,25,8
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,261,133
+    CONTROL         "UDP",IDC_RADIO_UDP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,146,28,10
+    CONTROL         "TCP",IDC_RADIO_TCP,"Button",BS_AUTORADIOBUTTON,52,146,
+                    28,10
+END
+
+IDD_SENDDATADLG DIALOG DISCARDABLE  0, 0, 284, 157
+STYLE DS_ABSALIGN | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "发送数据"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDSHOW,7,24,270,106,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    PUSHBUTTON      "发送(&T)",IDC_BSEND,190,136,40,14
+    PUSHBUTTON      "退出(&Q)",IDC_BQUIT,237,136,40,14
+    CONTROL         "HEX",IDC_CKHEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    138,28,10
+    PUSHBUTTON      "CR",IDC_BCR,38,136,15,14
+    PUSHBUTTON      "LF",IDC_BLF,55,136,15,14
+    COMBOBOX        IDC_CMUSERLIST,7,6,99,61,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDSENDCOUNT,217,6,60,14,ES_AUTOHSCROLL
+    LTEXT           "发送数量",IDC_STATIC1,180,10,33,8
+    CONTROL         "自动",IDC_CKAUTOSEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,137,27,10
+    EDITTEXT        IDC_INTERVAL,113,136,40,14,ES_AUTOHSCROLL
+END
+
+IDD_AddUser DIALOG DISCARDABLE  0, 0, 247, 146
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "添加用户"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "添加",IDOK,41,125,50,14
+    PUSHBUTTON      "退出",IDCANCEL,157,125,50,14
+    GROUPBOX        "用户信息",IDC_STATIC,7,7,233,114,BS_CENTER
+    LTEXT           "DTU号码",IDC_STATIC,28,25,28,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,57,20,89,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "在线状态",IDC_STATIC,152,22,31,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO1,185,21,47,40,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "DTU地址",IDC_STATIC,28,41,28,10,SS_CENTERIMAGE
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    57,39,89,11
+    LTEXT           "DTU端口",IDC_STATIC,154,41,28,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO2,185,39,47,75,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "DSC地址",IDC_STATIC,28,58,28,10,SS_CENTERIMAGE
+    CONTROL         "IPAddress2",IDC_IPADDRESS2,"SysIPAddress32",WS_TABSTOP,
+                    57,57,89,13
+    LTEXT           "DSC端口",IDC_STATIC,156,59,27,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO3,185,58,47,63,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "登录时间",IDC_STATIC,25,78,31,9
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,57,76,90,13
+    LTEXT           "最后注册时间",IDC_STATIC,10,95,46,11,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,57,95,91,11
+END
+
+IDD_REMOTEDTUSETTINGDLG DIALOG DISCARDABLE  0, 0, 319, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DTU参数设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "查询",IDC_CHECKBTN,205,197,28,14
+    PUSHBUTTON      "Cancel",IDC_CANCELBTN,273,197,26,14
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,7,7,305,188
+    CONTROL         "超时设置",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,97,200,48,10
+    LTEXT           "选择DTU",IDC_STATIC,7,202,31,8
+    COMBOBOX        IDC_CHOOSEDTUCOMBO,41,200,48,49,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TIMEEDIT,146,200,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "秒",IDC_STATIC,192,202,9,8
+    PUSHBUTTON      "设置",IDC_SETBTN,240,196,27,14
+    PUSHBUTTON      "默认",IDC_DEFAULTBTN,206,214,27,14
+    PUSHBUTTON      "重启",IDC_REBOOTBTN,273,214,27,14
+END
+
+IDD_SettingPanel1 DIALOG DISCARDABLE  0, 0, 236, 145
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "服务代码",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,31,48,10
+    CONTROL         "GPRS",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,76,13,35,10
+    CONTROL         "CDMA",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,116,14,36,
+                    10
+    EDITTEXT        IDC_EDIT11,78,29,102,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "PPP用户名",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,48,54,10
+    EDITTEXT        IDC_EDIT12,78,46,102,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "PPP登录密码",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,66,62,10
+    EDITTEXT        IDC_EDIT13,78,64,102,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "接入点名称",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,84,56,10
+    EDITTEXT        IDC_EDIT14,78,82,102,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "SIM PIN",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,101,42,10
+    EDITTEXT        IDC_EDIT15,78,99,102,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "全选",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    155,122,32,10
+END
+
+IDD_SettingPanel2 DIALOG DISCARDABLE  0, 0, 226, 190
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "DTU标识",IDC_CHECK21,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,20,46,10
+    EDITTEXT        IDC_EDIT21,95,18,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "本地端口",IDC_CHECK22,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,38,48,10
+    EDITTEXT        IDC_EDIT22,95,36,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "在线报告间隔",IDC_CHECK23,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,57,64,10
+    EDITTEXT        IDC_EDIT23,95,55,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "最大包长",IDC_CHECK24,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,75,48,10
+    EDITTEXT        IDC_EDIT24,96,73,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "重连接间隔",IDC_CHECK25,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,91,56,10
+    EDITTEXT        IDC_EDIT25,96,89,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "调试状态",IDC_CHECK26,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,110,48,10
+    EDITTEXT        IDC_EDIT26,96,108,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "最后包空闲间隔",IDC_CHECK27,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,128,72,10
+    EDITTEXT        IDC_EDIT27,96,126,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "包分隔符",IDC_CHECK28,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,144,48,10
+    EDITTEXT        IDC_EDIT28,96,142,77,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "全选",IDC_CHECK29,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    175,156,32,10
+END
+
+IDD_SettingPanel3 DIALOG DISCARDABLE  0, 0, 232, 164
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "主DSC地址",IDC_CHECK31,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,19,54,10
+    CONTROL         "DSC域名",IDC_CHECK32,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,36,46,10
+    EDITTEXT        IDC_EDIT32,89,34,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "域名检测间隔",IDC_CHECK33,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,54,64,10
+    EDITTEXT        IDC_EDIT33,88,52,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "主DSC端口",IDC_CHECK34,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,72,54,10
+    EDITTEXT        IDC_EDIT34,88,70,130,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "域名服务器地址",IDC_CHECK35,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,88,72,10
+    CONTROL         "备用DSC地址",IDC_CHECK36,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,116,62,10
+    CONTROL         "备用DSC端口",IDC_CHECK37,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,135,62,10
+    EDITTEXT        IDC_EDIT36,87,133,95,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "全选",IDC_CHECK38,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    187,135,32,10
+    COMBOBOX        IDC_COMBO31,89,88,127,30,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "IPAddress3",IDC_IPADDRESS3,"SysIPAddress32",WS_DISABLED | 
+                    WS_TABSTOP,89,14,129,15
+    CONTROL         "IPAddress4",IDC_IPADDRESS4,"SysIPAddress32",WS_DISABLED | 
+                    WS_TABSTOP,88,112,130,15
+END
+
+IDD_SendSettingParamDLG DIALOG DISCARDABLE  0, 0, 272, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "当前选择参数"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,48,150,50,14
+    PUSHBUTTON      "取消",IDCANCEL,141,150,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    7,7,258,88
+    LTEXT           "上面是您选择更新的参数设置",IDC_STATIC,13,107,240,10
+    LTEXT           "不正确的配置可能会导致DTU无法正常工作，请仔细检查是否有遗漏或错误",
+                    IDC_STATIC,14,120,251,17
+    LTEXT           "如果确定要更新请点击确定，否则点击取消",IDC_STATIC,14,
+                    138,153,8
+END
+
+IDD_SettingPanel4 DIALOGEX 0, 0, 203, 141
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    CONTROL         "选择",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,27,20,32,10
+    GROUPBOX        "",IDC_STATIC,13,14,178,115,WS_GROUP,WS_EX_TRANSPARENT
+    LTEXT           "波特率",IDC_STATIC,28,31,25,8
+    COMBOBOX        IDC_COMBO1,67,26,88,70,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据位",IDC_STATIC,29,50,25,8
+    COMBOBOX        IDC_COMBO4,67,47,88,51,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "停止位",IDC_STATIC,29,68,25,8
+    COMBOBOX        IDC_COMBO5,67,65,88,52,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "校验位",IDC_STATIC,29,86,25,8
+    COMBOBOX        IDC_COMBO6,67,83,88,41,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "流控制",IDC_STATIC,29,105,25,8
+    COMBOBOX        IDC_COMBO7,67,102,88,47,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SQLSETTING DIALOG DISCARDABLE  0, 0, 165, 104
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据库配置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,108,83,50,14
+    LTEXT           "数据库名",IDC_STATIC,14,18,33,13
+    LTEXT           "用户名",IDC_STATIC,23,43,24,11
+    LTEXT           "密码",IDC_STATIC,29,66,18,9
+    EDITTEXT        IDC_DATABASENAME,52,15,62,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USERNAME,52,39,62,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,52,63,62,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,1,0,1
+ PRODUCTVERSION 2,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DSC Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "2, 1, 0, 1\0"
+            VALUE "InternalName", "DSC\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0"
+            VALUE "LegalTrademarks", "Hongdian Technologies Co.,Ltd\0"
+            VALUE "OriginalFilename", "DSC.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "DSC 应用程序\0"
+            VALUE "ProductVersion", "2, 1, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SETTINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_SENDDATADLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_AddUser, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_REMOTEDTUSETTINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_SettingPanel1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_SettingPanel2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_SettingPanel3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_SendSettingParamDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_SettingPanel4, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_SQLSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SETTINGDLG DLGINIT
+BEGIN
+    IDC_CMSERVERPORT, 0x403, 5, 0
+0x3035, 0x3230, "\000" 
+    IDC_CMSERVERPORT, 0x403, 5, 0
+0x3035, 0x3330, "\000" 
+    IDC_CMSERVERPORT, 0x403, 5, 0
+0x3035, 0x3430, "\000" 
+    IDC_CMSERVERPORT, 0x403, 5, 0
+0x3036, 0x3030, "\000" 
+    IDC_CMSERVERPORT, 0x403, 5, 0
+0x3036, 0x3130, "\000" 
+    IDC_CMSERVERPORT, 0x403, 5, 0
+0x3036, 0x3230, "\000" 
+    IDC_CMSERVERPORT, 0x403, 5, 0
+0x3036, 0x3330, "\000" 
+    IDC_CMPOLLTIME, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMPOLLTIME, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CMPOLLTIME, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_CMPOLLTIME, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_CMPOLLTIME, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_CMPOLLTIME, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_CMPOLLTIME, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_CMOFFLINETIME, 0x403, 2, 0
+0x0030, 
+    IDC_CMOFFLINETIME, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMOFFLINETIME, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CMOFFLINETIME, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_CMOFFLINETIME, 0x403, 3, 0
+0x3036, "\000" 
+    IDC_CMOFFLINETIME, 0x403, 4, 0
+0x3231, 0x0030, 
+    IDC_CMOFFLINETIME, 0x403, 4, 0
+0x3831, 0x0030, 
+    IDC_CMOFFLINETIME, 0x403, 4, 0
+0x3432, 0x0030, 
+    IDC_CMLOGITEMCOUNT, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_CMLOGITEMCOUNT, 0x403, 4, 0
+0x3031, 0x0030, 
+    IDC_CMLOGITEMCOUNT, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_CMLOGITEMCOUNT, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_CMLOGITEMCOUNT, 0x403, 4, 0
+0x3035, 0x0030, 
+    IDC_CMLOGITEMCOUNT, 0x403, 4, 0
+0x3038, 0x0030, 
+    IDC_CMLOGITEMCOUNT, 0x403, 5, 0
+0x3031, 0x3030, "\000" 
+    0
+END
+
+IDD_AddUser DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xdad4, 0xdfcf, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3035, 0x3130, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3035, 0x3230, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3035, 0x3330, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3035, 0x3430, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3036, 0x3130, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3036, 0x3230, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3036, 0x3330, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3035, 0x3130, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3035, 0x3230, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3035, 0x3330, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3035, 0x3430, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3036, 0x3130, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3036, 0x3230, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3036, 0x3330, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3036, 0x3430, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "DSC\n\nVc_dem\n\n\nVcdemo.Document\nVc_dem Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DSC 中心程序1.0 版"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+    ID_VIEW_AUTOARRANGE     "在网格上排列图标。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "通过使用小图标显示项目。\n小图标"
+    ID_VIEW_LARGEICON       "通过使用大图标显示项目。\n大图标"
+    ID_VIEW_LIST            "在列表中显示项目。\n列表"
+    ID_VIEW_DETAILS         "显示在窗口中每个项目的信息。\n详细资料"
+    ID_VIEW_LINEUP          "在网格中排列图标。"
+    ID_VIEW_BYNAME          "按字母顺序对图标排序。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MISTARTSERVICE       "启动服务\n启动"
+    ID_MISTOPSERVICE        "停止服务\n停止"
+    ID_MIOFFLINE            "分离终端\n分离"
+    ID_MICLEAR              "清空\n清空"
+    ID_MIREFRESHTABLE       "刷新列表\n刷新"
+    ID_MISENDDATA           "发送数据\n发送"
+    ID_QUIT                 "退出\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MISHOWDATA           "数据处理设置\n数据"
+    ID_MIANSWER             "应答\n应答"
+    ID_MISERVERSETTING      "服务参数配置\n服务"
+    ID_SHOWMENU             "显示菜单\n菜单"
+    ID_ABOUT                "关于DSC 中心程序1.0 版\n关于"
+    ID_HELPCONTENT          "帮助文档\n帮助"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_Adduser              "添加用户\n添加用户"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DSC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
